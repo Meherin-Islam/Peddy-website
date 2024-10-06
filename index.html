@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-6</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/1da44e6a5e.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            clr: 'rgb(14, 122, 129)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    Hello 
+<body class="p-0 m-0">
+    <header>
+        <nav >
+            <div class="navbar bg-base-100 pt-10 px-20 py-12">
+                <div class="navbar-start">
+                  <img src="images/logo.webp" alt="" srcset="">
+                  <h2 class="text-3xl font-bold ml-3">Peddy</h2>
+                  
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-regular fa-user border-solid border-2 border-gray-200 p-4  rounded-full "></i>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h3 class="text-lg text-gray-600 w-3/12 mx-auto pl-10">Bringing Families Together 
+                    </h3>
+                    <h2 class="text-[68px] text-black font-bold w-3/5 mx-auto text-center mb-4">Your Path to Adoption Starts Here</h2>
+                    <h3 class="w-3/5 mx-auto text-center text-black mb-7">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</h3>
+                   <div class="w-36 mx-auto ">
+                    <button class="px-8 py-4 rounded-xl bg-clr text-white   mx-auto">View More</button>
+                   </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
