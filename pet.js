@@ -5,6 +5,34 @@ const loadCategories = () => {
       .then((data) => displayCategories(data.categories))
       .catch((error) => console.log(error));
   };
+
+  const loadpets = () => {
+    // Fetch the data
+    fetch("https://openapi.programming-hero.com/api/peddy/pets")
+      .then((res) => res.json())
+      .then((data) => displaypets(data.pets))
+      .catch((error) => console.log(error));
+  };
+
+const displaypets = (pets) => {
+    const petContainer = document.getElementById("pets");
+    pets.forEach((pet) => {
+        console.log(pet);
+        const card = document.createElement("div");
+    card.classList = "card card-compact ";
+    card.innerHTML = `
+     <figure ">
+        <img
+        src=${pet.image}
+        class="h-full w-full object-cover"
+        />
+        </figure>
+        <div class = "px-0 py-2">
+        </div> `;
+petContainer.append(card);
+    });
+};
+
   
   const displayCategories = (categories) => {
     const categoryContainer = document.getElementById("categories");
@@ -24,10 +52,11 @@ const loadCategories = () => {
       button.appendChild(icon);
       button.innerHTML += item.category;
   
-      // Append button to category container
+    
       categoryContainer.appendChild(button);
     });
   };
   
   loadCategories();
+  loadpets();
   
