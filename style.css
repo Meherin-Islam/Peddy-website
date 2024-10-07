@@ -1,17 +1,22 @@
 .active {
-    background-color: red;
-    color: #fff;
-  }
+  background-color: red;
+  color: #fff;
+}
+.bg-gray{
+  color: gray;
+  background-color: gray;
+  
+}
 
-  .btn {
-    width: 200px;
-    height: 70px;
-    border: 1px solid rgba(14, 122, 129, 0.15);
-    border-radius: 16px;
-    background: white;
-    font-size: 24px;}
-    
-    .category-icon {
-        width: 35px;   
-        height: 35px;  
-      }
+.btn {
+  width: 200px;
+  height: 70px;
+  border: 1px solid rgba(14, 122, 129, 0.15);
+  border-radius: 16px;
+  background: white;
+  font-size: 24px;}
+  
+  .category-icon {
+      width: 35px;   
+      height: 35px;  
+    }
